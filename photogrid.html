@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="photogrid.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300&display=swap">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body id="#top">
+    <header class="navbar">
+        <h1>NAVTTC Furniture Home</h1>
+        <nav class="links">
+            <ul>
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="gallery" id="home">
+        <h1>Home</h1><br /><br />
+        <div class="card">
+            <img src="a.jpg">
+            <h2>Bed room simple design</h2>
+        </div>
+        <div class="card">
+            <img src="b.webp">
+            <h2>Luxurious sofa design</h2>
+        </div>
+        <div class="card">
+            <img src="c.jpg">
+            <h2>Home kitchen design</h2>
+        </div>
+        <div class="card">
+            <img src="d.webp">
+            <h2>Wooden wall design</h2>
+        </div>
+        <div class="card">
+            <img src="e.jpg">
+            <h2>Dinning set design</h2>
+        </div>
+        <div class="card">
+            <img src="f.jpg">
+            <h2>Chair Design</h2>
+        </div>
+        <h1>Click</h1>
+        <a href="#top">Back to Top</a>
+    </section>
+    <script>
+        $(document).ready(() => {
+          $(".links li a").on("click", (e) => {
+            $(".links li a").removeClass("active");
+            $(e.target).addClass("active");
+          });
+        });
+      </script>
+</body>
+</html>
